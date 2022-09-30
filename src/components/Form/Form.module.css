@@ -58,3 +58,19 @@ p.danger{
     background-color: green;
     color: var(--white-color);
 }
+
+@media only screen and (max-width: 650px) {
+    form>div{
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+
+}
+@media only screen and (min-width: 850px) {
+
+}
+@media only screen and (min-width: 1000px) {
+
+}

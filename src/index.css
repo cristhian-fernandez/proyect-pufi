@@ -43,7 +43,8 @@ html {
 
   --heading-font: "Inter",sans-serif;
   --body-font: "Manrope",sans-serif;
-
+  --scrollbar-thumb-color: var(--grey-400);
+  --scrollbar-track-color: var(--grey-300);
   --menu-bg: rgb(44, 44, 44, 0.7);
   --menu-bg-dark: rgba(31, 31, 31, 0.9);
 }
