@@ -1,0 +1,81 @@
+.logo{
+    font-family: 'Signika Negative', sans-serif;
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: var(--huge-font-size);
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding-left: var(--body-padding-left);
+    padding-right: var(--body-padding-right);
+    position: fixed;
+    top: 0;
+    z-index: var(--z-modal);
+    width: 100%;
+    background-color: var(--menu-bg-dark);
+}
+.menu_toggle{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu_option{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: var(--h3-font-size);
+    color: var(--white-color);
+    align-items: center;
+    padding: 3px;
+}
+.menu_item{
+    font-size: var(--smaller-font-size);
+    font-weight: 900;
+    margin-left: 10px;
+}
+.menu_account {
+    font-size:  var(--smaller-font-size);
+    font-weight: 800;
+    height: 40px;
+    height: auto;
+    text-align: center;
+}
+.menu_account a {
+    padding: 0;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    color: var(--white-color);
+    text-align: center;
+}
+@media only screen and (min-width: 992px) {
+    .menu{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--menu-bg);
+    }
+    .menu_toggle{
+        width: auto;
+    }
+    .menu_option{
+        flex-direction: column;
+    }
+    .menu_account {
+        font-size:  var(--tiny-font-size);
+        font-weight: 800;
+        height: 40px;
+        text-align: left;
+    }
+    .menu_account a {
+        padding: 0;
+        text-align: left;
+    }
+}

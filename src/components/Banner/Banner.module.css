@@ -1,0 +1,46 @@
+.banner{
+    height: auto;
+    position: relative;
+    top: 0;
+}
+
+.banner_center{
+    position: absolute;
+    z-index: var(--z-fixed);
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner_title{
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white-color)
+}
+
+@media only screen and (max-width: 650px) {
+    .banner_title{
+        font-size: var(--h4-font-size);
+    }
+    .banner_center{
+        top: 65%
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .banner_title{
+        font-size: var(--h3-font-size);
+    }
+}
+@media only screen and (min-width: 850px) {
+    .banner_title{
+        font-size: var(--h2-font-size);
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .banner_title{
+        font-size: var(--bigger-font-size);
+    }
+}

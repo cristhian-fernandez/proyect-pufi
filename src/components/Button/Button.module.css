@@ -1,0 +1,21 @@
+.button{
+    padding: 8px 24px;
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    color: var(--white-color)
+}
+.button:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.buttonMore{
+    padding: 8px 24px;
+    background-color: transparent;
+    border: 0;
+    color: var(--black-color)
+}
+
+.buttonMore:hover{
+    border: 2px solid var(--black-color);
+}

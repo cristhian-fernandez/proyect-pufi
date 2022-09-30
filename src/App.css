@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+.danger{
+    color: var(--danger-color);
+    font-size: var(--smaller-font-size);
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ScrollBar Styling */
+body::-webkit-scrollbar {
+    width: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
+    border-radius: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+body::-webkit-scrollbar-thumb:hover {
+    background: #697ca2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.carousel-control-prev, .carousel-control-next{
+    display: none;
+}
+
+.carousel-indicators{
+    justify-content: center;
+    align-items: center;
+}
+.carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    border: 4px double #fff;
+}
+
+.dropdown-menu{
+    background-color: transparent;
+    padding: 5px 10px;
+    font-size: var(--smaller-font-size);
+}
+
+a:hover{
+    color: var(--black-color) !important;
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: var(--white-color) !important;
+}
+
+.nav-link.active:hover{
+    color: var(--black-color) !important;
+}
+
+.modal-header{
+    padding-bottom: 0;
+    border: 0;
+}
+.modal-title {
+    font-size: 15px;
+    color: green;
+}
+.modal-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+}
+.modal-title svg{
+    margin-right: 5px;
+}
+.modal-footer{
+    padding-top: 0;
+    padding-bottom: 10px;
+    border: 0;
+}
+.dropdown-menu{
+    background-color: var(--menu-bg);
+}
+.navbar-toggler{
+    border-color: var(--white-color);
+}
+.navbar-toggler:focus{
+    border-color: var(--white-color) !important;
+}
+
+@media only screen and (max-width: 850px) {
+    .carousel-indicators{
+        display: none;
+    }
+    .nav-item.show.dropdown {
+        text-align: center;
+    }
+    /* .Nav_menu_account__DfF0m.navbar-nav {
+        text-align: center;
+    } */
 }

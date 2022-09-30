@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "title": "Pufi RAIN",
+      "url": "#",
+      "description": "Encontrarás los mejores productos para la lluvia",
+      "image_small": "https://i.ibb.co/FBfN2Gs/img-rain-small.jpg",
+      "image_big": "https://i.ibb.co/93DXTkm/img-rain-big.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Pufi PUFF",
+      "url": "#",
+      "description": "Encontrarás los mejores productos para relajarte",
+      "image_small": "https://i.ibb.co/rmwS5qX/img-puff-small.jpg",
+      "image_big": "https://i.ibb.co/pL7h9FX/img-puff-big.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Pufi CART",
+      "url": "#",
+      "description": "Encontrarás los mejores productos de bolsos",
+      "image_small": "https://i.ibb.co/HxFrTGJ/img-cart-small.jpg",
+      "image_big": "https://i.ibb.co/k6wbV9H/img-cart-big.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Pugi NAP",
+      "url": "#",
+      "description": "Encontrarás los mejores productos para descanzar",
+      "image_small": "https://i.ibb.co/YXb4t2t/img-nap-small.jpg",
+      "image_big": "https://i.ibb.co/SX9cRB7/img-nap-big.jpg"
+    }
+]

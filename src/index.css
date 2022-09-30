@@ -1,13 +1,146 @@
+html {
+  /* Variables globales */
+  --grey-100: #fbfdfe;
+  --grey-200: #f9fafb;
+  --grey-300: #ecf0f3;
+  --grey-400: #b7c1c8;
+  --grey-500: #8e9ba4;
+  --grey-600: #687782;
+  --grey-700: #273b49;
+  --grey-800: #28353e;
+  --grey-900: #192229;
+  
+  --light-bg: #f0f0f0;
+  --dark-bg: #212e36;
+  
+  --border-radius: 0.5rem;
+  --form-border-radius:  0.25rem;
+  --white-color: #fff;
+  --black-color: #2a3b47;
+  
+  --huge-font-size: 3rem;
+  --bigger-font-size: 2.5rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5625rem;
+  --h3-font-size: 1.3125rem;
+  --h4-font-size: 1.0625rem;
+  --normal-font-size: 1.1rem;
+  --text-font-size: 1em;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.7rem;
+  
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+  --background-color: var(--light-bg);
+  --title-color: var(--first-color);
+  --text-color: var(--grey-700);
+  --border-color: var(--grey-300);
+
+  --heading-font: "Inter",sans-serif;
+  --body-font: "Manrope",sans-serif;
+
+  --menu-bg: rgb(44, 44, 44, 0.7);
+  --menu-bg-dark: rgba(31, 31, 31, 0.9);
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--grey-900);
+  font-family: var(--title-font);
+}
+
+button{
+  font-family: var(--title-font);
+}
+
+h1{
+  font-size: var(--h1-font-size);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+h2{
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+}
+h3{
+  font-size: var(--h3-font-size);
+  font-weight: 500;
+}
+h4{
+  font-size: var(--h4-font-size);
+  font-weight: 500;
+}
+
+p{
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+}
+
+a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+a:hover, a:active {
+  color: var(--white-color);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--body-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--white-color);
+  height: 100vh;
+  width: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.text-content{
+  font-size: var(--normal-font-size);
+}
+
+@media only screen and (max-width: 650px) {
+  html{
+    --bigger-font-size: 2rem;
+    --body-padding-left: 30px;
+    --body-padding-right: 30px;
+    --normal-font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 650px) {
+  html{
+    --bigger-font-size: 2.2rem;
+    --body-padding-left: 50px;
+    --body-padding-right: 50px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  html{
+    --bigger-font-size: 2.5rem;
+    --body-padding-left: 60px;
+    --body-padding-right: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html{
+    --body-padding-left: 80px;
+    --body-padding-right: 80px;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  html{
+    --body-padding-left: 100px;
+    --body-padding-right: 100px;
+  }
+}
+
+

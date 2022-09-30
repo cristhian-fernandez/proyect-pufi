@@ -1,0 +1,108 @@
+.footer{
+    box-shadow: 0px -2px 6px var(--grey-400);
+    border-top: 1px solid var(--grey-400);
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: var(--body-padding-left);
+    padding-right: var(--body-padding-right);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--grey-400);
+}
+
+.footer_content a{
+    color: var(--grey-900);
+    font-size: var(--tiny-font-size);
+    font-weight: 900;
+    margin-bottom: 8px
+}
+
+.footer_content>div{
+    display:flex;
+    flex-direction:column;
+    padding-left: 40px;
+    padding-right: 40px;
+    width:100%
+}
+.line{
+    border-left: 1px solid var(--grey-400);
+}
+
+.logo{
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 900;
+    font-size: var(--h1-font-size);
+}
+.footer_seccion{
+    text-align: center;
+}
+.footer h4{
+    font-size: var(--tiny-font-size);
+    color: var(--grey-900);
+    font-weight: 900;
+}
+.footer_seccion>div{
+    display:flex;
+    align-items:center;
+}
+.footer_seccion>div>span{
+    font-size: var(--h1-font-size);
+    margin-right: 8px;
+}
+.footer_seccion>div h4{
+    font-weight: 600;
+    width: 100px;
+    text-align:left;
+}
+
+.footer_networks{
+    flex-direction: row !important;
+}
+.footer_networks span{
+    font-size: var(--h3-font-size);
+    margin-right: 10px;
+}
+.footer_networks .icon{
+    position: relative;
+    bottom:5px
+}
+.footer>h4{
+    padding-left: var(--body-padding-left);
+    padding-right: var(--body-padding-right);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: var(--grey-500);
+    font-weight: 500;
+}
+@media only screen and (max-width: 650px) {
+    .footer_content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer_content>div{
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .footer_content .logo,.footer_content .footer_seccion,.footer_content .footer_networks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .line{
+        border:0;
+    }
+    .footer>h4{
+        text-align: center;
+    }
+}
+
+
